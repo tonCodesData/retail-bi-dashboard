@@ -15,12 +15,12 @@ metrics including revenue trends, top products, and geographic performance.
 - **Git/GitHub** — version control
 
 ## Project Structure
-retail-bi-dashboard/
-├── data/               # Raw and clean data (excluded from Git)
-├── scripts/            # Python cleaning and loading scripts
-├── docs/               # Dashboard screenshots
-├── PROGRESS.md         # Step by step build log
-└── README.md
+
+- **data/** — Raw and clean data (excluded from Git)
+- **scripts/** — Python cleaning and loading scripts
+- **docs/** — Dashboard screenshots
+- **PROGRESS.md** — Step by step build log
+- **README.md** — Project documentation
 
 ## Dashboard Pages
 *Coming soon — in progress*
