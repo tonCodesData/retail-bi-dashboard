@@ -1,0 +1,10 @@
+# Data files — too large for GitHub
+data/Online Retail.xlsx
+data/online_retail_clean.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
