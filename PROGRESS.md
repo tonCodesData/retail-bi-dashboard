@@ -33,6 +33,11 @@ built with Python, SQL Server, and Power BI.
 - Loaded clean data into dbo.retail_sales table
 - Verified in SSMS — 530,104 rows confirmed
 
-### Step 5 — SQL Queries 🔄 In progress
+### Step 5 — SQL Views ✅
+- Created vw_monthly_revenue — monthly revenue, orders and units sold
+- Created vw_top_products — top 20 products by revenue
+- Created vw_revenue_by_country — revenue and orders by country
+- Saved all views to scripts/views.sql
+
 ### Step 6 — Power BI Dashboard ⬜ Pending
 ### Step 7 — Documentation and Portfolio Polish ⬜ Pending
