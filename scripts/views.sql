@@ -41,3 +41,35 @@ SELECT
     COUNT(DISTINCT CustomerID) AS UniqueCustomers
 FROM dbo.retail_sales
 GROUP BY Country
+
+-- View 4: Customer Segments (CTE example)
+-- Uses two CTEs to segment customers into spend quartiles
+-- CTE 1 (customer_spend): aggregates total spend, orders, and dates per customer
+-- CTE 2 (customer_segments): applies NTILE(4) to rank customers into quartiles
+CREATE VIEW vw_customer_segments AS
+WITH customer_spend AS (
+    SELECT 
+        CustomerID,
+        COUNT(DISTINCT InvoiceNo) AS TotalOrders,
+        ROUND(SUM(TotalAmount), 2) AS TotalSpend,
+        ROUND(AVG(TotalAmount), 2) AS AvgOrderValue,
+        MIN(InvoiceDate) AS FirstPurchase,
+        MAX(InvoiceDate) AS LastPurchase
+    FROM dbo.retail_sales
+    WHERE CustomerID IS NOT NULL
+    GROUP BY CustomerID
+),
+customer_segments AS (
+    SELECT *,
+        NTILE(4) OVER (ORDER BY TotalSpend DESC) AS SpendQuartile
+    FROM customer_spend
+)
+SELECT 
+    SpendQuartile,
+    COUNT(*) AS NumberOfCustomers,
+    ROUND(AVG(TotalSpend), 2) AS AvgSpend,
+    ROUND(MIN(TotalSpend), 2) AS MinSpend,
+    ROUND(MAX(TotalSpend), 2) AS MaxSpend,
+    ROUND(AVG(TotalOrders), 2) AS AvgOrders
+FROM customer_segments
+GROUP BY SpendQuartile
