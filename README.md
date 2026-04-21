@@ -27,7 +27,11 @@ retail-bi-dashboard/
 
 ## Dashboard Pages
 
-![Dashboard Screenshot](docs/dashboard_screenshot.png)
+### Executive Overview
+![Executive Overview](docs/dashboard_screenshot.png)
+
+### Customer Segment Analysis
+![Customer Segment Analysis](docs/customer_segment_screenshot.png)
 
 ### Executive Overview
 Single-page dashboard featuring:
