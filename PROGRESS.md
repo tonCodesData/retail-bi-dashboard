@@ -39,8 +39,10 @@ built with Python, SQL Server, and Power BI.
 - Created vw_revenue_by_country — revenue and orders by country
 - Saved all views to scripts/views.sql
 
-### Step 6 — Power BI Dashboard 🔄 In progress
-- Connected Power BI to SQL Server RetailDW
+### Step 6 — Power BI Dashboard ✅
+- Connected Power BI to SQL Server RetailDW (Import mode)
 - Created _Measures table with 5 DAX measures
-- Built Executive Overview page — 4 KPI cards, monthly revenue line chart
-### Step 7 — Documentation and Portfolio Polish ⬜ Pending
+- Built star schema with vw_dim_country as dimension table
+- Country slicer filters all visuals via proper relationships
+- Single page dashboard with KPI cards, line chart, bar charts, and slicer
+- Screenshot saved to docs/

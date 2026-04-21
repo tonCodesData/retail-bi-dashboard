@@ -26,7 +26,20 @@ retail-bi-dashboard/
 ```
 
 ## Dashboard Pages
-*Coming soon — in progress*
+
+![Dashboard Screenshot](docs/dashboard_screenshot.png)
+
+### Executive Overview
+Single-page dashboard featuring:
+- KPI cards — Total Revenue (£10.67M), Total Orders (20K), Total Units Sold (6M), Average Order Value (£534)
+- Monthly Revenue Trend line chart — clear Q4 seasonality visible
+- Revenue by Country bar chart — UK dominates, Netherlands and EIRE are top international markets
+- Top 20 Products by Revenue bar chart
+- Country slicer — filters all visuals simultaneously
 
 ## Key Findings
-*To be completed when dashboard is built*
+- Total revenue of £10.67M across 530,000+ transactions (Dec 2010 – Dec 2011)
+- Strong Q4 seasonality — November 2011 was peak month at £1.5M
+- United Kingdom accounts for the vast majority of revenue
+- Top product: Regency Cakestand 3 Tier at £150K+ revenue
+- 38 countries represented, with Netherlands and EIRE as strongest international markets
