@@ -41,8 +41,11 @@ built with Python, SQL Server, and Power BI.
 
 ### Step 6 — Power BI Dashboard ✅
 - Connected Power BI to SQL Server RetailDW (Import mode)
-- Created _Measures table with 5 DAX measures
-- Built star schema with vw_dim_country as dimension table
-- Country slicer filters all visuals via proper relationships
-- Single page dashboard with KPI cards, line chart, bar charts, and slicer
-- Screenshot saved to docs/
+- Created _Measures table with 5 DAX measures (Total Revenue, Total Orders, Total Units Sold, Average Order Value, Unique Customers)
+- Built star schema with vw_dim_country as dimension table enabling cross-filtering
+- Country slicer filters all visuals simultaneously via proper one-to-many relationships
+- **Page 1 — Executive Overview:** 4 KPI cards, monthly revenue line chart, top 20 products bar chart, revenue by country bar chart
+- **Page 2 — Customer Segment Analysis:** Bar chart and table showing customer spend distribution across 4 quartiles using CTE-based SQL view
+- Key insight: Top 25% of customers average £6,499 spend and 10 orders vs £179 and 1 order for bottom 25%
+- Screenshots saved to docs/
+
