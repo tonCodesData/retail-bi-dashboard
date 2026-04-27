@@ -47,3 +47,9 @@ Single-page dashboard featuring:
 - United Kingdom accounts for the vast majority of revenue
 - Top product: Regency Cakestand 3 Tier at £150K+ revenue
 - 38 countries represented, with Netherlands and EIRE as strongest international markets
+
+### Customer & Marketing Analytics
+![Customer Marketing Screenshot](docs/customer_marketing_screenshot.png)
+- Cohort retention heatmap — 13 acquisition cohorts tracked month-on-month
+- A/B test simulation — control vs treatment group revenue comparison  
+- Revenue per Million Population — JSON-enriched geographic analysis
