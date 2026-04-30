@@ -49,3 +49,11 @@ built with Python, SQL Server, and Power BI.
 - Key insight: Top 25% of customers average £6,499 spend and 10 orders vs £179 and 1 order for bottom 25%
 - Screenshots saved to docs/
 
+### Step 7 — Customer & Marketing Analytics Extension ✅
+- Built cohort retention analysis using 3 chained CTEs and DATEDIFF
+- Created A/B test simulation — control/treatment split by CustomerID odd/even
+- Ingested semi-structured JSON from REST Countries API (36 countries)
+- Joined JSON data to retail sales — Revenue per Million Population metric
+- Created 4 new SQL views: vw_cohort_analysis, vw_ab_test, vw_ab_test_summary, vw_country_enriched_sales
+- Added Customer & Marketing Analytics page to Power BI dashboard
+- Applied to Matalan Customer Data Analyst role
