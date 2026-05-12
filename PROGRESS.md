@@ -4,12 +4,10 @@
 Junior BI Developer application project — UK online retail analytics dashboard
 built with Python, SQL Server, and Power BI.
 
-**Target role:** Junior BI Developer, Trafford, Manchester  
+Built as a portfolio project to demonstrate end-to-end data analytics skills. 
 **Stack:** Python, SQL Server 2025, SSMS, Power BI Desktop, Git
 
 ---
-
-## Week 1 — 16/04/2026
 
 ### Step 1 — Environment Setup ✅
 - Installed SQL Server 2025 Express
@@ -56,4 +54,3 @@ built with Python, SQL Server, and Power BI.
 - Joined JSON data to retail sales — Revenue per Million Population metric
 - Created 4 new SQL views: vw_cohort_analysis, vw_ab_test, vw_ab_test_summary, vw_country_enriched_sales
 - Added Customer & Marketing Analytics page to Power BI dashboard
-- Applied to Matalan Customer Data Analyst role
