@@ -2,7 +2,7 @@
 
 An end-to-end Business Intelligence and analytics project built on real UK retail transaction data. Covers the full data pipeline from raw data cleaning through to interactive Power BI dashboards, with SQL analytics including cohort analysis, customer segmentation, A/B test simulation, and JSON data enrichment.
 
-Built as a portfolio project targeting Data Analyst, BI Developer, and Customer Analytics roles in the UK market.
+Built as a portfolio project to demonstrate end-to-end data analytics skills across the full pipeline — from raw data ingestion and cleaning through to SQL-based analytics and interactive dashboards."
 
 ---
 
