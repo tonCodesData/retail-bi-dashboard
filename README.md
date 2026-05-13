@@ -48,7 +48,7 @@ Built as a portfolio project to demonstrate end-to-end data analytics skills acr
 
 - **data/** — Raw and clean data files (excluded from Git)
 - **scripts/** — Python cleaning notebook, SQL views, cohort analysis notebook
-- **docs/** — Dashboard screenshots
+- **docs/** — Dashboard screenshots and data dictionary
 - **PROGRESS.md** — Step by step build log
 - **README.md** — Project documentation
 
@@ -86,6 +86,8 @@ Interactive Dashboard (3 pages)
 | `vw_cohort_analysis` | Customer retention by acquisition cohort — 3 chained CTEs |
 | `vw_ab_test_summary` | A/B test campaign simulation — control vs treatment comparison |
 | `vw_country_enriched_sales` | Retail sales joined to JSON API data — revenue per million population |
+
+A full [Data Dictionary](docs/data_dictionary.md) is available covering field definitions, derived metrics, data quality rules, and data lineage for all views and source tables.
 
 ---
 
