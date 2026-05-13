@@ -148,7 +148,27 @@ A full [Data Dictionary](docs/data_dictionary.md) is available covering field de
 
 ---
 
+## Limitations & What I'd Do Next
+
+**Current limitations**
+- Dashboard uses Import mode — data requires manual refresh; not suitable for live operational use without scheduled refresh or DirectQuery
+- Star schema currently has one dimension table (vw_dim_country); a fuller dimensional model would separate date, product, and customer dimensions
+- A/B test simulation uses a proxy split (odd/even CustomerID) rather than a true randomised experiment
+- JSON API data is ingested as a one-off snapshot; a production version would automate this on a schedule
+
+**If I were to extend this project**
+- Implement incremental refresh in Power BI to handle growing transaction data efficiently
+- Add row-level security (RLS) so regional managers see only their own country's data
+- Build a proper date dimension table to enable time-intelligence DAX functions (YTD, MTD, rolling averages)
+- Migrate EVM-style budget vs actual calculations into DAX measures rather than pre-aggregating in SQL
+- Add a customer lifetime value (CLV) model using RFM scoring (Recency, Frequency, Monetary)
+- Containerise the Python pipeline using Docker for reproducibility and easier deployment
+
+  ---
+
 ## Certifications
 
 - [Microsoft Certified: Power BI Data Analyst Associate (2026)](https://learn.microsoft.com/api/credentials/share/en-us/RTonmoy-9502/EB6F4345EC12AB55?sharingId=E40DB118463467CE)
 - [Excel Skills for Data Analytics and Visualization — Macquarie University (2023)](https://coursera.org/verify/specialization/SQUXTDBPCWXF)
+
+
